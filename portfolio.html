@@ -26,7 +26,7 @@
               <a class="nav-link" href="about.html">About</a>
              </li>
              <li class="nav-item">
-              <a class="nav-link" href="experience.html">Experience</a>
+              <a class="nav-link" href="portfolio.html">Experience</a>
              </li>
              <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -39,7 +39,7 @@
 
 
        body{
-         background-color:thistle;
+         background-image: url("./assets/ColorfulBackground_03.jpg");
        }
 
        .navbar {
@@ -48,23 +48,18 @@
 
        .jumbotron {
          background-color: whitesmoke;
+         margin-top: 10px;
   
        }
 
-       main {
-          background-image:url("./assets/ColorfulBackground_03.jpg");
-
-          padding: 20px;
-       }
-
-       .card {
-         align-content:space-around;
-       }
-
       footer {
-         background-color:lightgray;
+        background-color:#343a40;
           
       }
+
+      i {
+       color:whitesmoke;
+     }
 
     </style>
     <!-- Main page content/cards -->
@@ -72,44 +67,37 @@
       <!-- Header -->
        <header class="jumbotron">
          <!-- Headline -->
-         <h1 class="display-4 text-center"><strong>My Experience</strong></h1>
+         <h1 class="display-4 text-center"><strong>Dylan Breznay</strong></h1>
+         <h2 class="display-6 text-center">My portfolio</h2>
        </header>
-       <!-- Cards -->
-          <div class="row">
-            <div class="col-6"> 
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 </div>
-              </div>
-            </div>
 
-          <div class="row">   
-            <div class="col-6">
-              <section class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <figure class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </section>
-              </figure>
-          </div>
-            
-            </div>
-          
+       <!-- Cards -->
+       <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+        
      </main>
      <!-- Footer with social links-->
-     <footer class="container-fluid footer-style fixed-bottom">
-      <div class="container">
+    <footer class="container-fluid footer-style fixed-bottom">
+      <figure class="container">
         <div class="row">
-            <div class="col-md-6">
-              <a  target="_blank" href="https://my.indeed.com/p/dylanb-tmp9rsu" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-            
-              <a  target="_blank" href="https://instagram.com/dylan.breznay?r=nametag" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+            <div class="col-md-6"> 
+              <a  target="_blank" href="https://my.indeed.com/p/dylanb-tmp9rsu"><i class="fa fa-fw fa-linkedin"></i></a>
+              <a  target="_blank" href="https://github.com/dbreznay"><i class="fab fa-github"></i></a>
+              <a  target="_blank" href="https://instagram.com/dylan.breznay?r=nametag" ><i class="fab fa-instagram-square"></i></a>
             </div>
-        </div>
-    </div>
-  </footer>
+          </figure>
+      </footer> 
   <!-- JS links -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
