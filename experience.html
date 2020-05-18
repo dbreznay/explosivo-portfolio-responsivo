@@ -9,8 +9,8 @@
   <title>Experience</title>
  </head>
  <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Experience</a>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="">Experience</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -33,23 +33,52 @@
         </div>
     </nav>
     <style>
+
+
+       body{
+         background-color: teal;
+       }
+
+       .navbar {
+         background-color: rgb(124, 124, 124);
+       }
+
+       .jumbotron {
+         background-color: whitesmoke;
+         border-radius: 30%;
+         border: 2px;
+         border-color: lightseagreen;
+       }
+       
        main {
           background-image:url("./assets/ColorfulBackground_03.jpg");
-          margin-bottom: 20px;
+
           padding: 20px;
-          border: 20px; 
+
        }
+
       section.card {
+        align-content:space-between, space-around;
         block-size: 100%;
+        padding: 20px;
+        margin-bottom:20px;
       }
+
+      footer {
+         background-color:lightgray;
+          
+      }
+
     </style>
 
     <main class="container">
-         <h1 class="display-4">My Experience</h1>
-         <div class="row">
+       <header class="jumbotron">
+         <h1 class="display-4 text-center"><strong>My Experience</strong></h1>
+       </header>
+          <div class="row">
             <div class="col-6"> 
                <section class="card" id="Programmer">
-                  <figure class="card-header">
+                  <figure class="card-header bg-md-dark">
                       <h4>Automation Programmer</h4>
                   </figure>
                   <blockquote class="card-body text-center">
@@ -67,20 +96,20 @@
               </section>
             </div>
           <div class="col-6">
-            <section class="card">
+             <section class="card">
                   <figure class="card-header">
                     <h4>Low Voltage Technician</h4>
                   </figure>
-                <blockquote class="card-body text-center">
-                   <strong><p>Since February of 2019 I've also been a Tech at Home Theatre Experts LLC </p></strong> 
-                </blockquote>
-                <ul>
+                  <blockquote class="card-body text-center">
+                  <strong><p>Since February of 2019 I've also been a Tech at Home Theatre Experts LLC </p></strong> 
+                  </blockquote>
+                  <ul>
                   <li>I pre-wire houses to be integrated with Contol4 Smart Home Technologies</li>
                   <li>I install home theatre equipment such as tvs, projectors, and surround sound systems</li>
                   <li>I provide services for equipent installed by our company by troubleshooting issues as well as Control4 integration </li>
                 </ul> 
-           </section>
-         </div>
+             </section>
+          </div>
        </div>
      </main>
      <footer class="container-fluid footer-style fixed-bottom">
