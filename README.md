@@ -7,6 +7,7 @@ It will contain personlized information (about me, pictures, links to social med
 
 This page will feature a navbar, responsive layout, and responsive images!
 
+link to my page: https://dbreznay.github.io/explosivo-portfolio-responsivo/
 
 
 
