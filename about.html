@@ -47,8 +47,11 @@
       }
 
       .jumbotron {
+        position: absolute;   
+        left: 50%;
+        top:10%;
+        transform: translate(-50%, 0);
         background-color: whitesmoke;
- 
       }
 
       .card {
@@ -63,26 +66,34 @@
      i {
        color:whitesmoke;
      }
+     img { 
+       align-self: center;
+       width: 50%; 
+       height: 50%;
+       margin-bottom:10px;
+      
+       }
    
    </style>
 
       <!-- Header -->
-    <header class="container">
+    <header class="jumbotron text-center">
+
       <!-- Headline -->
        <h1 class="display-4">About Me</h1>
+
        <!-- My Picture -->
-         <section class="row">
-           <figure class="col-3">
-             <img class="img-fluid" 
-              src="assets/Myself.JPG" 
-              alt="Me" title="Me">
-           </figure>
+        <img class="img-fluid"
+          src="https://user-images.githubusercontent.com/60904436/91752409-f44eae00-eb8b-11ea-84e6-870909f5f6bd.jpg" 
+          alt="Me" title="Me">
+
          <!-- Bio -->
-          <p class=" jumbotron col-9"> <strong> I'm Dylan breznay!</strong> I was born in Redondo Beach, CA. I moved to nashville when i was
-              3 with my family and have called it home ever since. I currently live in Franklin, TN. I am a father
-              to a 7 year old son. I currently work as a Low volt tech/Automation Programmer for Home Theatre experts LLC
+         <h4>Hello,I'm Dylan Breznay!</h4>
+          <p> I was born in Redondo Beach, CA. I moved to TN when i was
+              3 with my family and have called it home ever since. I currently live in Spring Hill, TN. I am a student at the Vanderbilt University Coding Boot Camp.
+              I am employed as a Project Manager at Timberstone LLC. I strive to learn something new, and build myself into a better person everyday.
           </p>
-         </section>
+         
           
      </header>
     <!-- Footer with social links -->
@@ -90,7 +101,7 @@
       <figure class="container">
         <div class="row">
             <div class="col-md-6">
-              <a  target="_blank" href="https://my.indeed.com/p/dylanb-tmp9rsu"><i class="fa fa-fw fa-linkedin"></i></a>
+              <a  target="_blank" href="https://www.linkedin.com/in/dylan-breznay-a76974162/"><i class="fa fa-fw fa-linkedin"></i></a>
               <a  target="_blank" href="https://github.com/dbreznay"><i class="fab fa-github"></i></a>
               <a  target="_blank" href="https://instagram.com/dylan.breznay?r=nametag" ><i class="fab fa-instagram-square"></i></a>
             </div>

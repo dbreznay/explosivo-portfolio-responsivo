@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   
   <title>My Portfolio</title>
  </head>
@@ -47,15 +47,33 @@
        }
 
        .jumbotron {
-         background-color: whitesmoke;
-         margin-top: 10px;
-  
+        position:relative;   
+        left: 50%;
+        top:10%;
+        transform: translate(-50%, 0);
+        background-color: whitesmoke;
+         
+       }
+      
+      .card {
+        position: relative;
+        background-color: whitesmoke;
+        
+        
        }
 
-       .card { 
-         margin-bottom: 50px;
-       }
+      .card-header {
+        position: relative;
+        text-align: center;
+        background-color: whitesmoke;
+        margin-bottom: 2rem;
+      }
 
+      .card-deck {
+        display: flex;
+      }
+
+    
       footer {
         background-color:#343a40;
           
@@ -64,47 +82,128 @@
       i {
        color:whitesmoke;
 
-      
      }
+
+     img { 
+       align-self: center;
+       width: 50%; 
+       height: 50%;
+       margin-bottom:10px;
+      
+       }
     
     </style>
     <!-- Main page content/cards -->
     <main class="container">
       <!-- Header -->
-       <header class="jumbotron">
+       <header class="jumbotron text-center">
          <!-- Headline -->
-         <h1 class="display-4 text-center"><strong>Dylan Breznay</strong></h1>
-         <h2 class="display-6 text-center">My portfolio</h2>
-         <br>
-         <div class="text-center"><a href="https://my.indeed.com/p/dylanb-tmp9rsu" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> My Resume </a></div>
-         <br>
-         <div class="text-center"><a href="https://dbreznay.github.io/Recipe-Hub/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> Project Link </a></div> 
+         <h1>Professional Portfolio:</h1>
+          <h3>Dylan Breznay</h2>
+           <img class="img-fluid"src="https://user-images.githubusercontent.com/60904436/91752409-f44eae00-eb8b-11ea-84e6-870909f5f6bd.jpg"alt="Me" title="Me">
+         
+         <li>Full Stack Web Developer</li>
+         <li>Project Manager at Timberstone LLC</li>
+
        </header>
 
-       <!-- Card-->
-       <div class="row">
-        <div class="col-12"> 
-           <section class="card">
-              <figure class="card-header text-center">
-                  <h4>Automation Programmer</h4>
-              </figure>
-           <blockquote class="card-body text-center">
-                  <strong><p>In December of 2019, I became a Control4-certified Automation
-                    Programmer. I learnd and mastered skills to build entire custom smart-home projects
-                    from scratch.
-                  </p></strong> 
-               </blockquote>
-               <ul>
-                 <li>I customized lighting scenes for various events/settings</li>
-                 <li>I created custom "When/Then" macros for various applications such as "Entertain" and "Dining" events, that allowed users to set the appropriate enviornment for any occasion</li>
-                 <li>I integrated programs that allowed home owners to easily control all aspects 
-                of their home lighting, entertainment, comfort and security from one device with ease and confidence </li>
-              
-               </ul> 
-          </section>
-        </div>
-        <br> 
+       <!--Projects Cards-->
 
+       <div class="card-header">
+         <h1>Featured Projects</h1>
+      </div>
+      <!--Project examples-->
+<div class="row row-cols-1 row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 class="card-title text-center">Project 1:</h3>
+        <p class="card-text text-center">We created an application that allows users to type in ingredients so that they can find a simple recipe for breakfast, lunch or dinner. There is also a random joke of the day included on our application to provide the user with a good laugh.</p>
+      </div>
+      <img src="https://user-images.githubusercontent.com/60904436/85801109-cbcbb300-b707-11ea-8b04-483cb26e0106.png" class="card-img-bottom" alt="Project1">
+      <div class="card-body text-center">
+        <a href="https://dbreznay.github.io/Recipe-Hub/." class="card-link">Live App</a>
+        <a href="https://github.com/dbreznay/Recipe-Hub" class="card-link">Github Repo</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 class="card-title text-center">Project 2:</h3>
+        <p class="card-text text-center">Site Logic provides tools to help you manage your projects, project tasks, and project workload across your entire organization. Users will have the ability to add project specific tasks, add employees to their projects, search for other employees in the directory, and create completely new projects.</p>
+      </div>
+      <img src="https://user-images.githubusercontent.com/60904436/90958432-278d9080-e45a-11ea-8577-1baa9d9c33fb.png" class="card-img-bottom" alt="Project2">
+      <div class="card-body text-center">
+       <a href="https://glacial-reef-34949.herokuapp.com/" class="card-link">Live App</a>
+       <a href="https://github.com/dbreznay/Daring-Donkeys" class="card-link">Github Repo</a>
+     </div>
+    </div>
+  </div>
+</div>
+  <!--hw-->
+  <div class="card-header">
+    <h1>Homework Highlights</h1>
+  </div>
+  <!-- hw examples -->
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title text-center">Weather-Dashboard</h3>
+          <p class="card-text text-center">This challenge was to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. This app utilizes OpenWeather API to retrieve weather data for cities.</p>
+        </div>
+        <img src="https://user-images.githubusercontent.com/60904436/84614179-f48fb500-ae8a-11ea-93bd-013ad56627a3.png" class="card-img-bottom" alt="Weather-Dashboard">
+        <div class="card-body text-center">
+          <a href="https://dbreznay.github.io/06Weather-Dashboard/" class="card-link">Live App</a>
+          <a href="https://github.com/dbreznay/06Weather-Dashboard" class="card-link">Github Repo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title text-center">Password Generator</h3>
+          <p class="card-text text-center">Quickly generate a strong password using this application using selected user criteria. No more head scratching, trying to compose a password strong enough to provide security for your data. This application outputs a strong password with just a few clicks.</p>
+        </div>
+        <img src="https://user-images.githubusercontent.com/60904436/91790190-bf674900-ebd5-11ea-9c9d-2a22d58408b9.jpg" class="card-img-bottom" alt="Password-Generator">
+        <div class="card-body text-center">
+         <a href="https://dbreznay.github.io/Password-Generator/" class="card-link">Live App</a>
+         <a href="https://github.com/dbreznay/Password-Generator" class="card-link">Github Repo</a>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title text-center">Day Planner</h3>
+          <p class="card-text text-center">This is a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. This app uses Moment.js library to work with date and time.</p>
+        </div>
+        <img src="https://user-images.githubusercontent.com/60904436/84215257-50250180-aa8b-11ea-9c18-f81f8e567fa2.gif" class="card-img-bottom" alt="Day-Planner">
+        <div class="card-body text-center">
+          <a href="https://dbreznay.github.io/Day-Planner/" class="card-link">Live App</a>
+          <a href="https://github.com/dbreznay/Day-Planner" class="card-link">Github Repo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title text-center">Employee Tracker</h3>
+          <p class="card-text text-center">Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as Content Management Systems. In this homework assignment, my challenge is to architect and build a solution for managing a company's employees using node, inquirer, and MySQL</p>
+        </div>
+        <img src="https://user-images.githubusercontent.com/60904436/89605691-c9469800-d833-11ea-8dd3-3560f7151bcb.gif" class="card-img-bottom" alt="Employee-Tracker">
+        <div class="card-body text-center">
+         <a href="https://github.com/dbreznay/Employee-Tracker" class="card-link">Github Repo</a>
+       </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
      </main>
      <!-- Footer with social links-->
     <footer class="container-fluid footer-style fixed-bottom">
